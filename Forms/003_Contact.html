@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Элементы типа email, url, tel</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legent>Контактная информация</legent>
+			<p>
+				<!--
+					email - браузер проводит валидациюкорректности введённого email адреса. 
+				-->
+				<label>
+					E-mail
+					<input type="email" name="email" title="Формат данных неправильный. Только в Chrome" />
+				</label>
+			</p>
+			<p>
+				<!-- 
+					url - браузер проводит валидацию корректности введённого адреса.
+				-->
+				<label>
+					Сайт
+					<input type="url" name="website" title="Абсолютный URL. Обязятельно с протоколом HTTP. Например - http://tmhl5readiness.com/" />
+				</label>
+			</p>
+			<p>
+				<!--
+					tel - Мобильный браузер будет отображать экранную клавиатуру с цифрами	
+				-->
+				<label>
+					Телефон
+					<input type="tel" name="phone" />
+				</label>
+			</p>
+		</fieldset>
+		<br>
+		<p>
+			<input type="submit" value="Отправить" />
+		</p>
+	</form>
+	
+</body>
+</html>
